@@ -1,0 +1,22 @@
+/* reset styles */
+// @font-face {
+//     font-family: annabel;
+//     src: url(Fonts/Annabel/Annabel..ttf);
+// }
+
+
+* {
+    color: inherit;
+    margin: 0;
+}
+
+body {
+    font-family:  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    // font-family: annabel;
+}
+
+.card {
+    box-shadow: 2px 0px 18px -6px rgba(34, 60, 80, 0.37);
+    // background: #000;
+    padding: $base-padding;
+}

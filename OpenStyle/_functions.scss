@@ -1,0 +1,8 @@
+@function light-comp ($color){
+    // function: get input color & output --> != input color
+    // create supplement color
+    $complement : complement($color);
+    // create light colors
+    $light-complement: lighten($complement , 30%);
+    @return $light-complement;
+}

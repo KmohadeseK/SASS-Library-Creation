@@ -1,0 +1,37 @@
+// theme colors
+$error: rgb(207, 63, 63);
+$primary: rgb(60, 102, 241);
+$info: rgb(238, 191, 22);
+$secondary: rgb(95, 209, 141);
+
+$colors: (
+    'error':$error,
+    'info':$info,
+    'secondary':$secondary,
+    'pink':#e27bd0,
+    'purple':#842fc5,
+    'orange':#ff7b00dd,
+    'primary':$primary,
+    'green':rgb(27, 205, 27),
+    'black' : black,
+    'white' : white,
+    'gray' :gray,
+);
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thinckness: 1px;
+$base-border-radius: 20px;
+
+// box shadow
+$base-box-shadow :1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// font size
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size*0.75;
+$font-size-md: $base-font-size*1.5;
+$font-size-lg: $base-font-size*2;
+$font-size-xl: $base-font-size*3;

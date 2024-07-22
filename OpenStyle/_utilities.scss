@@ -1,0 +1,38 @@
+@use 'sass:math';
+
+
+$utilites :("padding": // create p element
+    ("prefix" : "p",
+        // create key & values
+        "values" :("0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding *2,
+            "3" : $base-padding *4,
+            "4" : $base-padding *6,
+            "5" : $base-padding *8,
+
+        )));
+
+@each $property , $map in $utilites() {
+    // get $prefix = p 
+    $prefix : map-get($map, "prefix");
+    // get key values
+    $values : map-get($map, "values");
+ 
+    // create p element class & add value 
+    @each $k , $v in $values() {
+        @if $k =="default" {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        }
+
+        @else {
+
+            // p = $prefix & $k = 0, 1, 2 ,...
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}
