@@ -1,4 +1,4 @@
-## Project Name: Sass Library
+## Sass Library
 
 ### Description
 This project is a Sass library that includes a collection of mixins, functions, and variables for use in web projects. This library is designed to increase speed and efficiency in web development and enhance Sass capabilities for producing optimized and maintainable CSS code.
